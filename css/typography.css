@@ -2,3 +2,14 @@
 body{
     font-family: 'Lato', sans-serif;
 }
+
+/* ASIDE */
+.notification-icon i{
+    color: var(--notification-bar-color);
+    font-size: 20px;
+}
+
+.notification-text a{
+    font-size: 13px;
+    color: var(--text-first-color);
+}

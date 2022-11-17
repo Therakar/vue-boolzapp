@@ -29,7 +29,7 @@
             <section id="aside">
                 <div class="aside-container flex">
                     <!-- aside header -->
-                    <div class="aside-header flex"> 
+                    <div class="aside-header flex standard-padding"> 
 
                         <div class="aside-header-user-info flex align-center">
                             <img src="img/avatar_io.jpg" alt="user-avatar">
@@ -45,10 +45,18 @@
                     <!-- /aside header -->
 
                     <!-- aside notification toggle -->
-                    <div class="aside-notification-toggle flex">                 
+                    <div class="aside-notification-bar flex standard-padding"> 
+                        <div class="notification-icon flex align-center">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>  
+                        <div class="notification-text flex ">
+                            <h5>Ricevi notifiche di nuovi messaggi</h5>
+                            <a href="#">Attiva notifiche desktop</a>
+                        </div>              
                     </div>
                     <!-- /aside notification toggle -->
-                    <div class="aside-search-bar flex">                 
+                    <div class="aside-search-bar flex"> 
+                                        
                     </div>
                     <div class="contacts-container flex">
                         <div class="contact"  v-for="(contact, index) in contacts">

@@ -22,11 +22,26 @@
 }
 
 /* NOTIFICATION TOGGLE */
-.aside-notification-toggle{
+.aside-notification-bar{
     width: 100%;
     height: 70px;
-    background-color: burlywood; /* DEBUG */
+    align-items: center;
+    background-color: var(--notification-bar-color);
 }
+
+.notification-icon{
+    background-color: var(--first-color);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.notification-text{
+    flex-direction: column;
+    padding-left: 10px;
+}
+
 
 .aside-search-bar{
     width: 100%;
