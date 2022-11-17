@@ -1,5 +1,5 @@
 /* MAIN HEADER */
-.main-header{
+.main-header, .main-footer{
     height: 60px;
     background-color: var(--first-color);
     align-items: center;
@@ -7,12 +7,21 @@
 }
 #main img{
     height: 55px;
-   width: 55px;
-   border-radius: 50%;
-   margin-right: 5px;
+    width: 55px;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 .main-header-icons i{
     padding-right: 15px;
     color: var(--text-first-color);
+}
+
+.chat-container{
+    overflow-y: auto;
+    height: calc(100% - 120px);
+}
+
+.main-footer{
+    padding: 5px;
 }

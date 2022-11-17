@@ -18,3 +18,9 @@ body{
     font-size: 13px;
     color: var(--text-first-color);
 }
+
+/* MAIN */
+.main-header-contact-info p{
+    font-size: 13px;
+    color: var(--text-first-color);
+}

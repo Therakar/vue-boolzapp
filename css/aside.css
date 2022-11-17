@@ -50,22 +50,10 @@
     background-color: var(--first-color)
 }
 
-.aside-search-bar button{
-    border: none;
-    width: 14%;
-    background-color: white;
-    color: var(--text-first-color);
-}
-.aside-search-bar input{
-    border: none;
-    background-color: white;
-    color: var(--text-first-color);
-    width: 85%;
-}
 /* CONTACTS */
 .contacts-container {
     width: 100%;
-    flex-grow: 1;
+    height: calc(100% - 500px);
     background-color: white;
     flex-direction: column;
 }

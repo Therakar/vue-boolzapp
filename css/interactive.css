@@ -4,10 +4,44 @@ i:hover{
     transform: scale(1.1);
 }
 
+/* ASIDE */
 #aside img {
     cursor: pointer;
 }
 
 #aside h5{
     cursor: pointer;
+}
+
+.aside-search-bar button{
+    border: none;
+    width: 14%;
+    background-color: white;
+    color: var(--text-first-color);
+}
+.aside-search-bar input{
+    border: none;
+    background-color: white;
+    color: var(--text-first-color);
+    width: 85%;
+}
+
+/* MAIN */
+.main-footer button{
+    border: none;
+    width: 10%;
+    background-color: transparent;
+    color: var(--text-first-color);
+    font-size: 20px;
+}
+
+.main-footer input{
+    border: none;
+    background-color: white;
+    color: var(--text-first-color);
+    width: 80%;
+    margin: 0 5px;
+    height: 80%;
+    border-radius: 3px;
+    padding-left: 10px;
 }
