@@ -23,12 +23,12 @@ body{
 }
 
 #aside{
-    width: 33%;
+    width: 350px;
     height: 100%;
 }
 
 #main{
-    width: 66%;
+    width: 850px;
     height: 100%;
     background-color: bisque; /* DEBUG */
 }

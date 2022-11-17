@@ -31,7 +31,7 @@ const { createApp } = Vue
                 ],
             },
             {
-                name: 'Fabio',
+                name: 'Giulia',
                 avatar: '_2',
                 visible: true,
                 messages: [

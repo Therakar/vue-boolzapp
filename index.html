@@ -59,18 +59,51 @@
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                         <input type="text" placeholder="Cerca o inizia una nuova chat">    
                     </div>
+                    <!-- container contatti -->
                     <div class="contacts-container flex">
-                        <div class="contact"  v-for="(contact, index) in contacts">
-
+                        <div class="contact flex standard-padding"  v-for="(contact, index) in contacts">
+                            <!-- immagine contatto -->
+                            <div class="contact-img flex align-center">
+                                <img :src="`img/avatar${contact.avatar}.jpg`" alt="avatar">
+                            </div>
+                            <!-- informazioni contatto -->
+                            <div class="info-container flex">
+                                <!--  -->
+                                <div class="contact-info">
+                                    <h5>{{contacts[index].name}}</h5>
+                                    <p>Preview ultimo messaggio inviato</p>
+                                </div>
+                                <!-- orario ultimo messaggio -->
+                                <div class="time">
+                                    <p>12:00</p>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
+                    <!-- /container contatti -->
                 </div>
             </section>
             <!-- /sezione aside -->
 
             <!-- sezione main -->
-            <section id="main"></div>
-
+            <section id="main">
+                <div class="main-header flex standard-padding">
+                    <div class="main-header-contact-info flex align-center">
+                        <img src="img/avatar_2.jpg" alt="user-avatar">
+                        <div>
+                            <h5>Giulia</h5>
+                            <p>Ultimo accesso oggi alle 12:00</p>
+                        </div>
+                    </div>
+                    <div class=" main-header-icons flex align-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="chat-container"></div>
+                <div class="main-footer"></div>
             </section>
             <!-- /sezione main -->
 

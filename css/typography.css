@@ -13,3 +13,8 @@ body{
     font-size: 13px;
     color: var(--text-first-color);
 }
+
+.info-container p{
+    font-size: 13px;
+    color: var(--text-first-color);
+}
