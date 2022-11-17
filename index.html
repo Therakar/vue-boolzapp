@@ -20,12 +20,39 @@
 
         <title>Boolzapp</title>
     </head>
-    <body>
+    <body class="flex">
         
-        <div id="app" class="container">
-            <div id="aside"></div>
-            <div id="main"></div>
-        </div>
+        <!-- container principale -->
+        <div id="app" class="container flex">
+
+            <!-- sezione aside -->
+            <section id="aside">
+                <div class="aside-container flex">
+                    <!-- aside header -->
+                    <div class="aside-header flex">                 
+                    </div>
+                    <!-- /aside header -->
+
+                    <!-- aside notification toggle -->
+                    <div class="aside-notification-toggle flex">                 
+                    </div>
+                    <!-- /aside notification toggle -->
+                    <div class="aside-search-bar flex">                 
+                    </div>
+                    <div class="contacts-container flex">
+                        <div class="contact"  v-for="(contact, index) in contacts">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /sezione aside -->
+
+            <!-- sezione main -->
+            <section id="main"></div>
+
+            </section>
+            <!-- /sezione main -->
 
 
 

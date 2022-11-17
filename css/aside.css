@@ -1,0 +1,40 @@
+.aside-container{
+    flex-direction: column;
+}
+
+.aside-header{
+    width: 100%;
+    height: 60px;
+    background-color: blueviolet; /* DEBUG */
+}
+
+.aside-notification-toggle{
+    width: 100%;
+    height: 70px;
+    background-color: burlywood; /* DEBUG */
+}
+
+.aside-search-bar{
+    width: 100%;
+    height: 35px;
+    background-color: darkgreen; /* DEBUG */
+}
+
+.contacts-container {
+    width: 100%;
+    flex-direction: column;
+    background-color: hotpink; /* DEBUG */
+    overflow-y: auto;
+}
+
+.contacts-list{
+    height: 100%;
+}
+
+.contact{
+    width: 100%;
+    height: 70px;
+    background-color: gold; /* DEBUG */
+    border-bottom: 1px solid lightgray;
+}
+
