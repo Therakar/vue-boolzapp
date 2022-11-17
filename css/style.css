@@ -2,4 +2,7 @@
 @import 'palette.css';
 @import 'typography.css';
 @import 'interactive.css';
+@import 'main.css';
+@import 'aside.css';
+@import 'common.css';
 @import 'utility.css';
