@@ -1,0 +1,13 @@
+
+i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#aside img {
+    cursor: pointer;
+}
+
+#aside h5{
+    cursor: pointer;
+}

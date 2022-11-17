@@ -2,12 +2,26 @@
     flex-direction: column;
 }
 
+/* ASIDE HEADER */
 .aside-header{
     width: 100%;
     height: 60px;
-    background-color: blueviolet; /* DEBUG */
+    justify-content: space-between;
 }
 
+#aside img{
+    height: 55px;
+   width: 55px;
+   border-radius: 50%;
+   margin-right: 5px;
+}
+
+.aside-header-icons i{
+    padding-right: 15px;
+    color: var(--text-first-color);
+}
+
+/* NOTIFICATION TOGGLE */
 .aside-notification-toggle{
     width: 100%;
     height: 70px;
