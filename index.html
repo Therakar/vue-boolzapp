@@ -61,7 +61,7 @@
                     </div>
                     <!-- container contatti -->
                     <div class="contacts-container flex">
-                        <div class="contact flex standard-padding"  v-for="(contact, index) in contacts" :class="{active : index === currentContact}">
+                        <div class="contact flex standard-padding"  v-for="(contact, index) in contacts" @click="selection(index)" :class="{active : index === currentContact}">
                             <!-- immagine contatto -->
                             <div class="contact-img flex align-center">
                                 <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.avatar">
