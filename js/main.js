@@ -177,7 +177,6 @@ const { createApp } = Vue
     methods: {
         selection (i) {
 			this.currentContact = i;
-            console.log(this.contacts[index].messages[this.contacts[index].messages.length - 1].message)
 		}
     }
   }).mount('#app')
