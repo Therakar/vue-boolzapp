@@ -61,17 +61,17 @@
                     </div>
                     <!-- container contatti -->
                     <div class="contacts-container flex">
-                        <div class="contact flex standard-padding"  v-for="(contact, index) in contacts">
+                        <div class="contact flex standard-padding"  v-for="(contact, index) in contacts" :class="{active : index === currentContact}">
                             <!-- immagine contatto -->
                             <div class="contact-img flex align-center">
-                                <img :src="`img/avatar${contact.avatar}.jpg`" alt="avatar">
+                                <img :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.avatar">
                             </div>
                             <!-- informazioni contatto -->
                             <div class="info-container flex">
                                 <!--  -->
                                 <div class="contact-info">
-                                    <h5>{{contacts[index].name}}</h5>
-                                    <p>Preview ultimo messaggio inviato</p>
+                                    <h5>{{contact.name}}</h5>
+                                    <p>{{contact.messages[contact.messages.length-1].message}}</p>
                                 </div>
                                 <!-- orario ultimo messaggio -->
                                 <div class="time">
@@ -90,9 +90,9 @@
             <section id="main">
                 <div class="main-header flex standard-padding">
                     <div class="main-header-contact-info flex align-center">
-                        <img src="img/avatar_2.jpg" alt="user-avatar">
+                        <img :src="`img/avatar${contacts[currentContact].avatar}.jpg`" alt="user-avatar">
                         <div>
-                            <h5>Giulia</h5>
+                            <h5>{{contacts[currentContact].name}}</h5>
                             <p>Ultimo accesso oggi alle 12:00</p>
                         </div>
                     </div>

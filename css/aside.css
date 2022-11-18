@@ -53,14 +53,15 @@
 /* CONTACTS */
 .contacts-container {
     width: 100%;
-    height: calc(100% - 500px);
+    flex-grow: 1;
     background-color: white;
     flex-direction: column;
+    overflow-y: auto;
 }
 
 .contact{
     width: 100%;
-    height: 70px;
+    height: 60px;
     border-bottom: 1px solid lightgray;
 }
 

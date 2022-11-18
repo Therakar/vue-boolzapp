@@ -20,6 +20,7 @@
 .chat-container{
     overflow-y: auto;
     height: calc(100% - 120px);
+    padding: 0 80px;
 }
 
 .main-footer{

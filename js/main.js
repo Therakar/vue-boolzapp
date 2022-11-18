@@ -6,6 +6,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        currentContact: 0,
         //array che contiene i contatti 
         contacts: [
             {
