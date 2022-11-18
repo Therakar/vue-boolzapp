@@ -26,7 +26,7 @@
         <div id="app" class="container flex">
 
             <!-- sezione aside -->
-            <section id="aside">
+            <div id="aside">
                 <div class="aside-container flex">
                     <!-- aside header -->
                     <div class="aside-header flex standard-padding"> 
@@ -83,33 +83,53 @@
                     </div>
                     <!-- /container contatti -->
                 </div>
-            </section>
+            </div>
             <!-- /sezione aside -->
 
             <!-- sezione main -->
-            <section id="main">
-                <div class="main-header flex standard-padding">
-                    <div class="main-header-contact-info flex align-center">
-                        <img :src="`img/avatar${contacts[currentContact].avatar}.jpg`" alt="user-avatar">
-                        <div>
-                            <h5>{{contacts[currentContact].name}}</h5>
-                            <p>Ultimo accesso oggi alle 12:00</p>
+            <div id="main">
+                <div class="main-container flex">
+                    <div class="main-header flex standard-padding">
+                        <div class="main-header-contact-info flex align-center">
+                            <img :src="`img/avatar${contacts[currentContact].avatar}.jpg`" alt="user-avatar">
+                            <div>
+                                <h5>{{contacts[currentContact].name}}</h5>
+                                <p>Ultimo accesso oggi alle 12:00</p>
+                            </div>
+                        </div>
+                        <div class=" main-header-icons flex align-center">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class=" main-header-icons flex align-center">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-paperclip"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    
+                    <div class="chat-container flex" > <!--v-for="message in contacts[currentContact].messages"-->
+                        <div class="message-container sent">
+                            <div class="message">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in perspiciatis odio. Esse in provident minus, architecto deserunt fugit sit! Quam molestias nesciunt corporis facilis! Quam illo doloribus distinctio deleniti?
+                            </div>
+                        </div>
+                        <div class="message-container sent">
+                            <div class="message">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in perspiciatis odio. Esse in provident minus, architecto deserunt fugit sit! Quam molestias nesciunt corporis facilis! Quam illo doloribus distinctio deleniti?
+                            </div>
+                        </div>
+                        <div class="message-container received">
+                            <div class="message">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in perspiciatis odio. Esse in provident minus, architecto deserunt fugit sit! Quam molestias nesciunt corporis facilis! Quam illo doloribus distinctio deleniti?
+                            </div>
+                            <span>12:00</span>
+                        </div>
+                    </div>
+                    <div class="main-footer flex "> 
+                        <button><i class="fa-regular fa-face-smile"></i></button>
+                        <input type="text" placeholder="Scrivi un messaggio">
+                        <button><i class="fa-solid fa-microphone"></i></button>    
                     </div>
                 </div>
-                <div class="chat-container flex">
-                </div>
-                <div class="main-footer flex "> 
-                    <button><i class="fa-regular fa-face-smile"></i></button>
-                    <input type="text" placeholder="Scrivi un messaggio">
-                    <button><i class="fa-solid fa-microphone"></i></button>    
-                </div>
-            </section>
+                
+            </div>
             <!-- /sezione main -->
 
 

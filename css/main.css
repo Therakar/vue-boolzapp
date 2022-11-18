@@ -1,4 +1,9 @@
 /* MAIN HEADER */
+.main-container{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
 .main-header, .main-footer{
     height: 60px;
     background-color: var(--first-color);
@@ -19,10 +24,23 @@
 
 .chat-container{
     overflow-y: auto;
-    height: calc(100% - 120px);
-    padding: 0 80px;
+    flex-grow: 1;
+    padding: 50px 80px;
+    background-image: url(../img/mine.jpg);
+    flex-direction: column;
+}
+
+.message-container{
+    max-width: 40%;
 }
 
 .main-footer{
+    
     padding: 5px;
+    
+}
+
+.sent{
+    align-self: flex-end;
+
 }

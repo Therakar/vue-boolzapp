@@ -1,5 +1,6 @@
 .aside-container{
     flex-direction: column;
+    height: 100%;
 }
 
 /* ASIDE HEADER */
