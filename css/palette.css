@@ -4,5 +4,6 @@
     --first-color: #EAEAEA;
     --text-first-color: gray;
     --notification-bar-color: #8EDAFC;
-
+    --message-sent-color: #D5F9BA;
+    --message-received-color: #fff;
 }

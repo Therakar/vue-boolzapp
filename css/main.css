@@ -31,16 +31,31 @@
 }
 
 .message-container{
-    max-width: 40%;
+    max-width: 60%;
+    min-width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-between;
 }
 
-.main-footer{
-    
+.message-container:not(last-of-type){
+    margin-bottom: 15px;
+}
+
+.main-footer{  
     padding: 5px;
-    
 }
 
-.sent{
+.message-time{
     align-self: flex-end;
-
 }
+
+.message-container.sent{
+    align-self: flex-end;
+    background-color: var(--message-sent-color);
+}
+
+.message-container.received{
+    background-color: var(--message-received-color);
+}
+

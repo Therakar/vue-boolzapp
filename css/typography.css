@@ -24,3 +24,8 @@ body{
     font-size: 13px;
     color: var(--text-first-color);
 }
+
+.message-time{
+    font-size: 13px;
+    color: var(--text-first-color);
+}

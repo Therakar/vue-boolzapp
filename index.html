@@ -74,7 +74,7 @@
                                     <p>{{contact.messages[contact.messages.length-1].message}}</p>
                                 </div>
                                 <!-- orario ultimo messaggio -->
-                                <div class="time">
+                                <div class="last-message-time">
                                     <p>12:00</p>
                                 </div>
                             </div>
@@ -104,23 +104,16 @@
                         </div>
                     </div>
                     
-                    <div class="chat-container flex" > <!--v-for="message in contacts[currentContact].messages"-->
-                        <div class="message-container sent">
+                    <div class="chat-container flex " >
+                        <div class="message-container flex sent" v-for="message in contacts[currentContact].messages">
                             <div class="message">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in perspiciatis odio. Esse in provident minus, architecto deserunt fugit sit! Quam molestias nesciunt corporis facilis! Quam illo doloribus distinctio deleniti?
+                                <p>placeholder</p>
                             </div>
+
+                            <span class="message-time">12:00</span>
+
                         </div>
-                        <div class="message-container sent">
-                            <div class="message">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in perspiciatis odio. Esse in provident minus, architecto deserunt fugit sit! Quam molestias nesciunt corporis facilis! Quam illo doloribus distinctio deleniti?
-                            </div>
-                        </div>
-                        <div class="message-container received">
-                            <div class="message">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in perspiciatis odio. Esse in provident minus, architecto deserunt fugit sit! Quam molestias nesciunt corporis facilis! Quam illo doloribus distinctio deleniti?
-                            </div>
-                            <span>12:00</span>
-                        </div>
+                        
                     </div>
                     <div class="main-footer flex "> 
                         <button><i class="fa-regular fa-face-smile"></i></button>
