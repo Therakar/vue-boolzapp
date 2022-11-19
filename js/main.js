@@ -7,6 +7,11 @@ const { createApp } = Vue
     data() {
       return {
         currentContact: 0,
+        newElement: {
+            date: '',
+            message: '',
+            status: ''
+        },
         //array che contiene i contatti 
         contacts: [
             {
@@ -175,8 +180,21 @@ const { createApp } = Vue
       }
     },
     methods: {
+        //funzione che seleziona l'index della card selezionata con il click
         selection (i) {
 			this.currentContact = i;
-		}
+		},
+        //funzione che stampa un elemento che ha come contenuo un messaggio inserito con un input testuale dell'utente
+        addElement(){
+            this.newElement.date = ''; //inserisce la data nel messaggio appena inviato
+            this.contacts[this.currentContact].messages.push(this.newElement); //inserisce il testo del messaggio
+            this.newElement.status='sent'; // specifica che il messaggio è in uscita
+
+            this.newElement = {
+                date: '',
+                message: '',
+                status: ''
+            }
+        }
     }
-  }).mount('#app')
+}).mount('#app')

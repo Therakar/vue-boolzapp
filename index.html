@@ -113,11 +113,11 @@
                         </div>
                         
                     </div>
-                    <div class="main-footer flex "> 
+                    <form class="main-footer flex " @submit.prevent="addElement"> 
                         <button><i class="fa-regular fa-face-smile"></i></button>
-                        <input type="text" placeholder="Scrivi un messaggio">
+                        <input type="text" placeholder="Scrivi un messaggio"  v-model="newElement.message">
                         <button><i class="fa-solid fa-microphone"></i></button>    
-                    </div>
+                    </form>
                 </div>
                 
             </div>
@@ -130,3 +130,4 @@
         <script src="js/main.js"></script>
     </body>
 </html>
+
