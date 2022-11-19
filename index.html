@@ -105,11 +105,9 @@
                     </div>
                     
                     <div class="chat-container flex " >
-                        <div class="message-container flex sent" v-for="message in contacts[currentContact].messages">
-                            <div class="message">
-                                <p>placeholder</p>
-                            </div>
-
+                        <div class="message-container flex" :class="message.status" v-for="(message, index) in contacts[currentContact].messages">
+                            <p class="message">{{message.message}}</p>
+                
                             <span class="message-time">12:00</span>
 
                         </div>
