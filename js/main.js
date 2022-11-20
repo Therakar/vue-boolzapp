@@ -12,6 +12,11 @@ const { createApp } = Vue
             message: '',
             status: ''
         },
+        cpuAnswer: {
+            date: '',
+            message: 'Ok',
+            status: 'received'
+        },
         //array che contiene i contatti 
         contacts: [
             {
@@ -195,6 +200,18 @@ const { createApp } = Vue
                 message: '',
                 status: ''
             }
+            setTimeout(()=>{
+                
+                this.newElement.date = ''; //inserisce la data nel messaggio appena inviato
+                this.contacts[this.currentContact].messages.push(this.cpuAnswer); //inserisce il testo del messaggio
+                this.newElement.status='received'; // specifica che il messaggio è in uscita
+                
+                this.cpuAnswer = {
+                    date: '',
+                    message: 'Ok',
+                    status: 'received'
+                }
+             }, 10 * 100 )
         }
     }
 }).mount('#app')
