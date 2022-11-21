@@ -7,12 +7,12 @@ const { createApp } = Vue
     data() {
       return {
         currentContact: 0,
-        newElement: {
+        newElement: { //messaggio che sarà inviato dall'utente
             date: '',
             message: '',
-            status: ''
+            status: 'sent'
         },
-        cpuAnswer: {
+        cpuAnswer: { //messaggio che verrà inviato automaticamente dal computer
             date: '',
             message: 'Ok',
             status: 'received'
@@ -195,17 +195,21 @@ const { createApp } = Vue
             this.contacts[this.currentContact].messages.push(this.newElement); //inserisce il testo del messaggio
             this.newElement.status='sent'; // specifica che il messaggio è in uscita
 
+            //svuota la variabile newElement per renderla riutilizzabile
             this.newElement = {
                 date: '',
                 message: '',
-                status: ''
+                status: 'sent'
             }
+            //fa comparire la risposta al messaggio dopo 10 secondi
             setTimeout(()=>{
                 
-                this.newElement.date = ''; //inserisce la data nel messaggio appena inviato
+
+                this.newElement.date = ''; //inserisce la data nel messaggio appena ricevuto
                 this.contacts[this.currentContact].messages.push(this.cpuAnswer); //inserisce il testo del messaggio
-                this.newElement.status='received'; // specifica che il messaggio è in uscita
+                this.newElement.status='received'; // specifica che il messaggio è in entrata
                 
+                //resetta la variabile cpuAnswer al suo valore di default
                 this.cpuAnswer = {
                     date: '',
                     message: 'Ok',

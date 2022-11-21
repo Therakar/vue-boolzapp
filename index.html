@@ -68,7 +68,7 @@
                             </div>
                             <!-- informazioni contatto -->
                             <div class="info-container flex">
-                                <!--  -->
+                                <!-- info di contatto -->
                                 <div class="contact-info">
                                     <h5>{{contact.name}}</h5>
                                     <p>{{contact.messages[contact.messages.length-1].message}}</p>
@@ -89,7 +89,9 @@
             <!-- sezione main -->
             <div id="main">
                 <div class="main-container flex">
+                    <!-- main header -->
                     <div class="main-header flex standard-padding">
+                        <!-- info del conatto selezionato -->
                         <div class="main-header-contact-info flex align-center">
                             <img :src="`img/avatar${contacts[currentContact].avatar}.jpg`" alt="user-avatar">
                             <div>
@@ -97,35 +99,40 @@
                                 <p>Ultimo accesso oggi alle 12:00</p>
                             </div>
                         </div>
+                        <!-- /info del conatto selezionato -->
+
+                        <!-- icone main header -->
                         <div class=" main-header-icons flex align-center">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
+                        <!-- /icone main header -->
                     </div>
-                    
+                    <!-- /main header -->
+
+                    <!-- chat -->
                     <div class="chat-container flex " >
+                        <!-- struttura del messaggio -->
                         <div class="message-container flex" :class="message.status" v-for="(message, index) in contacts[currentContact].messages">
                             <p class="message">{{message.message}}</p>
-                
                             <span class="message-time">12:00</span>
-
                         </div>
-                        
+                        <!-- /struttura del messaggio -->
                     </div>
+                    <!-- /chat  -->
+
+                    <!-- main footer -->
                     <form class="main-footer flex " @submit.prevent="addElement"> 
                         <button><i class="fa-regular fa-face-smile"></i></button>
                         <input type="text" placeholder="Scrivi un messaggio"  v-model="newElement.message">
                         <button><i class="fa-solid fa-microphone"></i></button>    
                     </form>
-                </div>
-                
+                    <!-- /main footer -->
+                </div> 
             </div>
             <!-- /sezione main -->
 
-
-
-        
         <!-- link js -->
         <script src="js/main.js"></script>
     </body>
